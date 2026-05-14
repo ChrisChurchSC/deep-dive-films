@@ -1,0 +1,42 @@
+.overlay {
+  position: fixed;
+  inset: var(--nav-h) 0 0 0;
+  background: var(--surface);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-6) var(--sp-5);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity var(--t-base), transform var(--t-base);
+  border-top: 1px solid var(--border);
+}
+
+.open {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.link {
+  font-size: 20px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--border);
+  transition: color var(--t-fast);
+}
+
+.link:hover { color: var(--accent); }
+
+.cta {
+  padding-top: var(--sp-6);
+}

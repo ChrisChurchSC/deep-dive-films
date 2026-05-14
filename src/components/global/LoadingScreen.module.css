@@ -1,0 +1,68 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--subtle);
+}
+
+.track {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.fill {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 2px;
+  animation: fill 1.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+.head {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translate(-50%, -50%);
+  animation: head 1.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+@keyframes fill {
+  from { width: 0% }
+  to   { width: 100% }
+}
+
+@keyframes head {
+  from { left: 0% }
+  to   { left: 100% }
+}

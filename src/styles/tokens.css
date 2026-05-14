@@ -1,0 +1,90 @@
+/* ─────────────────────────────────────────
+   DEEP DIVE FILMS — Design Tokens
+   Light-dominant system
+───────────────────────────────────────── */
+:root {
+  /* Surface */
+  --bg:        #e8e7e2;
+  --surface:   #e8e7e2;
+  --surface2:  #dfdedd;
+  --surface3:  #d8d7d5;
+
+  /* Text */
+  --text:      #111110;
+  --muted:     #6c6b63;
+  --subtle:    #aeada5;
+
+  /* Border */
+  --border:       rgba(17,17,16,0.09);
+  --border-hover: rgba(17,17,16,0.16);
+
+  /* Accent */
+  --accent:      #0099bb;
+  --accent-raw:  #00bbff;   /* brand origin — dark surfaces only */
+  --accent-bg:   rgba(0,153,187,0.07);
+  --accent-text: rgba(0,153,187,0.9);
+
+  /* Brand */
+  --cream:       #dedcc3;
+  --gradient:    linear-gradient(135deg, #00bbff 0%, #000cff 40%, #000898 70%, #080808 100%);
+
+  /* Status */
+  --green:    rgba(40,180,100,0.85);
+  --green-bg: rgba(40,180,100,0.07);
+  --red:      rgba(210,70,60,0.75);
+  --red-bg:   rgba(210,70,60,0.07);
+
+  /* Spacing (8px grid) */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
+  --sp-28: 112px;
+  --sp-32: 128px;
+
+  /* Layout */
+  --max-w:    1200px;
+  --nav-h:    56px;
+  --radius:   8px;
+  --radius-sm: 4px;
+  --radius-lg: 12px;
+  --radius-pill: 20px;
+
+  /* Type */
+  --font-display: 'neue-haas-grotesk-display', Inter, sans-serif;
+  --font-body:    Inter, sans-serif;
+  --font-mono:    'SF Mono', 'Fira Code', monospace;
+
+  /* Transitions */
+  --t-fast:   0.15s ease;
+  --t-base:   0.18s ease;
+  --t-slow:   0.35s ease;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 4px rgba(17,17,16,0.06);
+  --shadow-md: 0 2px 12px rgba(17,17,16,0.08);
+  --shadow-lg: 0 8px 32px rgba(17,17,16,0.10);
+}
+
+/* ── Dark surface overrides (applied via .dark class) ── */
+.dark {
+  --bg:       #080808;
+  --surface:  #0d0d0d;
+  --surface2: #121212;
+  --text:     #dedcc3;
+  --muted:    #8a8778;
+  --subtle:   #404038;
+  --border:   rgba(222,220,195,0.08);
+  --border-hover: rgba(222,220,195,0.15);
+  --accent:   #00bbff;
+  --accent-bg: rgba(0,187,255,0.07);
+  --accent-text: rgba(0,187,255,0.9);
+}

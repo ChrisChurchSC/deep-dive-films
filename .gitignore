@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+.DS_Store
+.env
+.env.local
+*.log
+
+# Large video assets — keep out of git
+public/films/**/*.mp4
+public/films/**/*.mov
+
+# Vercel
+.vercel
+.vercelignore

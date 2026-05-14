@@ -1,0 +1,23 @@
+# Deep Dive Films
+
+> New York-based film and television studio. Documentary and narrative work for streamers, networks, and festivals.
+
+Deep Dive Films is the entertainment arm of Deep Dive. We make documentary and narrative film — features, shorts, and series — for streamers, networks, and the festival circuit.
+
+## Selected films
+
+- What Will I Become? (2026 feature documentary, Berlinale premiere, exec produced by Harper Steele)
+- Big Bass (2025 short documentary, Palm Springs ShortFest Jury Prize)
+- Fireboys (2022 feature documentary, HBO)
+
+## Contact
+
+- Website: https://deepdivefilms.com
+- Email: hello@deepdivefilms.com
+- Location: Brooklyn, NY
+
+## Pages
+
+- / — Film catalogue
+- /films/:slug — Individual film pages
+- /about — Studio story

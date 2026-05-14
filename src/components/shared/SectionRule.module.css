@@ -1,0 +1,95 @@
+.root {
+  padding: var(--sp-10) 0 var(--sp-12);
+  background: transparent;
+}
+
+.inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--sp-10);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  overflow: hidden;
+}
+
+.meta {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+}
+
+.counter {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--subtle);
+  flex-shrink: 0;
+}
+
+/* Thick-to-thin rule — Vignelli style */
+.rule {
+  flex: 1;
+  position: relative;
+  height: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* Thick block at the left */
+.rule::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--text);
+  flex-shrink: 0;
+}
+
+/* Thin hairline extending to the right */
+.rule::after {
+  content: '';
+  display: block;
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.label {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--subtle);
+  flex-shrink: 0;
+}
+
+/* Dark variant */
+.dark .counter,
+.dark .label {
+  color: rgba(222, 220, 195, 0.3);
+}
+
+.dark .rule::before {
+  background: rgba(222, 220, 195, 0.55);
+}
+
+.dark .rule::after {
+  background: rgba(222, 220, 195, 0.08);
+}
+
+/* Dark variant */
+.dark .counter,
+.dark .label {
+  color: rgba(222, 220, 195, 0.3);
+}
+
+.dark .rule {
+  background: rgba(222, 220, 195, 0.08);
+}
+
+@media (max-width: 768px) {
+  .inner { padding: 0 var(--sp-5); }
+}
