@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import LoadingScreen from './components/global/LoadingScreen'
 
 const HomePage       = lazy(() => import('./pages/HomePage'))
@@ -23,6 +24,7 @@ export default function App() {
     <BrowserRouter>
       <LoadingScreen />
       <ScrollToTop />
+      <Analytics />
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<HomePage />}>
