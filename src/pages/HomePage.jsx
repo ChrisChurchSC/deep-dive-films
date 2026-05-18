@@ -39,11 +39,17 @@ export default function HomePage() {
   const [active, setActive] = useState(0)
   const [started, setStarted] = useState(false)
   const [now, setNow] = useState(() => new Date())
+  const [channelsOpen, setChannelsOpen] = useState(true)
   const film = films[active]
 
   useEffect(() => {
     const t = setInterval(() => setNow(new Date()), 1000)
     return () => clearInterval(t)
+  }, [])
+
+  // Collapse the channel list by default on mobile after mount.
+  useEffect(() => {
+    if (window.matchMedia('(max-width: 600px)').matches) setChannelsOpen(false)
   }, [])
 
   const localeTime = useMemo(() => {
@@ -109,6 +115,9 @@ export default function HomePage() {
         <div className={styles.accentStrip} aria-hidden="true" />
 
         <header className={styles.topbar}>
+          <Link to="/" className={styles.logoLink} aria-label="Deep Dive Films home">
+            <img src="/ddf-horizontal.svg" alt="Deep Dive Films" className={styles.logoImg} />
+          </Link>
           <p className={styles.tagline}>
             Award-winning documentary production company telling stories that stay with viewers.
           </p>
@@ -130,7 +139,13 @@ export default function HomePage() {
         <main className={styles.stage}>
           <div className={styles.controls}>
             <div className={styles.module}>
-              <div className={styles.moduleHead}>
+              <button
+                type="button"
+                className={styles.moduleHead}
+                onClick={() => setChannelsOpen((v) => !v)}
+                aria-expanded={channelsOpen}
+                aria-controls="channel-list"
+              >
                 <span className={styles.moduleLabel}>
                   <span className={styles.metaId}>DDF-{pad2(active + 1)}</span>
                   <span className={styles.metaSep}>·</span>
@@ -138,10 +153,13 @@ export default function HomePage() {
                   <span className={styles.metaSep}>·</span>
                   <span className={styles.metaStatus}>{statusFor(film)}</span>
                 </span>
-                <span className={styles.moduleCounter}>{pad2(active + 1)} / {pad2(films.length)}</span>
-              </div>
+                <span className={styles.moduleCounter}>
+                  {pad2(active + 1)} / {pad2(films.length)}
+                  <span className={styles.moduleChevron} aria-hidden="true">{channelsOpen ? '▴' : '▾'}</span>
+                </span>
+              </button>
 
-              <div className={styles.moduleBody}>
+              {channelsOpen && <div className={styles.moduleBody} id="channel-list">
                 <div className={styles.channels}>
                   <button
                     type="button"
@@ -192,7 +210,7 @@ export default function HomePage() {
                     )
                   })}
                 </div>
-              </div>
+              </div>}
             </div>
           </div>
         </main>
