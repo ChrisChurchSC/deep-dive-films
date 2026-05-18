@@ -46,6 +46,7 @@ export default function FilmDrawer() {
           <p className={styles.label}>Trailer</p>
           <video
             src={film.trailer}
+            poster={film.pageImage || undefined}
             controls
             playsInline
             preload="metadata"
