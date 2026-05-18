@@ -18,7 +18,6 @@ const homeJsonLd = {
   description: 'Award-winning documentary production company. Character-driven storytelling for streamers, networks, and festivals.',
   sameAs: [
     'https://www.instagram.com/deepdivefilms',
-    'https://vimeo.com/deepdivefilms',
   ],
 }
 
@@ -204,7 +203,7 @@ export default function HomePage() {
             <a href="mailto:hello@deepdivefilms.com" className={styles.bottomLink}>hello@deepdivefilms.com</a>
             <span className={styles.bottomSep}>·</span>
             {socials.instagram && <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className={styles.bottomLink}>IG</a>}
-            <span className={styles.bottomSep}>·</span>
+            {socials.instagram && socials.vimeo && <span className={styles.bottomSep}>·</span>}
             {socials.vimeo && <a href={socials.vimeo} target="_blank" rel="noopener noreferrer" className={styles.bottomLink}>Vimeo</a>}
           </div>
         </footer>

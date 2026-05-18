@@ -19,7 +19,6 @@ export const siteSettings = {
     copyrightCity: 'Brooklyn, NY.',
     socials: {
       instagram: 'https://www.instagram.com/deepdivefilms',
-      vimeo: 'https://vimeo.com/deepdivefilms',
     },
   },
 }
