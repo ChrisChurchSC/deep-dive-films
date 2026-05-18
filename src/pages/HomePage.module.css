@@ -142,7 +142,6 @@
 .logoLink {
   display: inline-flex;
   align-items: center;
-  height: 24px;
   flex-shrink: 0;
 }
 
@@ -150,6 +149,7 @@
   display: block;
   height: 24px;
   width: auto;
+  max-width: 100%;
 }
 
 .tagline {
