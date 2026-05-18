@@ -4,7 +4,7 @@ import { siteSettings } from '../../data/siteSettings'
 import styles from './InfoDrawer.module.css'
 import formStyles from './ContactForm.module.css'
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xxxxxxxx'
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xvzyoand'
 
 export default function ContactDrawer() {
   const email = siteSettings.contactEmail

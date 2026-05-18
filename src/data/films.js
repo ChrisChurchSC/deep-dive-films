@@ -10,8 +10,8 @@ export const films = [
     format: 'Feature documentary',
     poster: '/films/wwib/poster.jpg',
     pageImage: '/films/wwib/page.jpg',
-    pageVideo: '/films/wwib/trailer.mp4',
-    trailer: '/films/wwib/trailer.mp4',
+    pageVideo: 'https://cdn.sanity.io/files/h5ku88jy/production/e7c9d2a8d31bdd74afc3684e301492b9f51ca283.mp4',
+    trailer: 'https://cdn.sanity.io/files/h5ku88jy/production/e7c9d2a8d31bdd74afc3684e301492b9f51ca283.mp4',
     synopsis:
       "In this personal and expansive documentary, Lexie Bean and Logan Rozos explore the unique challenges of growing up as trans boys, interweaving their own journeys with the stories of two young men whose lives left a lasting imprint on their community.",
     credits: {
@@ -53,7 +53,7 @@ export const films = [
     format: 'Short documentary',
     poster: '/films/bigbass/poster.jpg',
     pageImage: '/films/bigbass/page.jpg',
-    pageVideo: '/films/bigbass/bg.mp4',
+    pageVideo: 'https://cdn.sanity.io/files/h5ku88jy/production/950e6cf78ebd533a45492afc543c3227f7f8afa2.mp4',
     pixelated: true,
     synopsis:
       "What does it mean to feel seen by others before you're ready to see yourself? A filmmaker travels back to 1997 to revisit a dream-like memory from second grade that centers around her queer identity, her legendary PE teacher and a mysterious large plastic fish.",
@@ -101,10 +101,10 @@ export const films = [
     year: '2021',
     format: 'Feature documentary',
     poster: '/films/fireboys/poster.jpg',
-    pageImage: '/films/fireboys/page.jpg',
-    pageVideo: '/films/fireboys/trailer.mp4',
+    pageImage: 'https://cdn.sanity.io/images/h5ku88jy/production/05cbbf8c98e7bd5b8a5f62133d02e2b58f5e2c4d-1920x1080.png',
+    pageVideo: 'https://cdn.sanity.io/files/h5ku88jy/production/5402eebefc5171cd37c92638b98311daf4d103e5.mp4',
     pageVideoStart: 15,
-    trailer: '/films/fireboys/trailer.mp4',
+    trailer: 'https://cdn.sanity.io/files/h5ku88jy/production/5402eebefc5171cd37c92638b98311daf4d103e5.mp4',
     synopsis:
       'The untold story of young men in California prisons who find hope and redemption by fighting wildfires, highlighting a path that is both hopeful and exploitative.',
     credits: {
@@ -147,8 +147,8 @@ export const films = [
     year: 'Post-production',
     format: 'Feature documentary',
     poster: '/films/grassceiling/poster.jpg',
-    pageImage: '/films/grassceiling/page.jpg',
-    pageVideo: '/films/grassceiling/bg.mp4',
+    pageImage: 'https://cdn.sanity.io/images/h5ku88jy/production/4ce903b6624d0a1201eae7901243b54747b933aa-3929x2623.jpg',
+    pageVideo: 'https://cdn.sanity.io/files/h5ku88jy/production/02280ada8055864bf96efd48ec1d026dd576c5e0.mp4',
     pixelated: true,
     synopsis:
       'The Grass Ceiling is an intergenerational story about women and baseball. A filmmaker revisits her abandoned dream of playing professional baseball by following four girls fighting for a place in the sport, as a historic women’s league prepares to launch.',
@@ -163,8 +163,8 @@ export const films = [
     year: 'Production',
     format: 'Documentary series',
     poster: '/films/hashhunt/poster.jpg',
-    pageImage: '/films/hashhunt/page.jpg',
-    pageVideo: '/films/hashhunt/bg.mp4',
+    pageImage: 'https://cdn.sanity.io/images/h5ku88jy/production/4ea6adf37249194a67c3eea7a018bee01504e77d-2700x4050.jpg',
+    pageVideo: 'https://cdn.sanity.io/files/h5ku88jy/production/ce8f5607de93078301e461f119cdfbfb0b80773a.mp4',
     pixelated: true,
     synopsis:
       'A true crime thriller about Vermont kingpin Billy Greer and his ragtag crew of smugglers, whose wild exploits led to the largest hash bust in history.',
@@ -179,8 +179,8 @@ export const films = [
     year: 'Coming soon',
     format: 'Short',
     poster: '/films/betheexplorer/poster.jpg',
-    pageImage: '/films/betheexplorer/page.jpg',
-    pageVideo: '/films/betheexplorer/bg.mp4',
+    pageImage: 'https://cdn.sanity.io/images/h5ku88jy/production/f7741a8cc8267e5a199a3cfbba49e4e57bfd61e2-4096x2160.jpg',
+    pageVideo: 'https://cdn.sanity.io/files/h5ku88jy/production/02bdf7c98379d8fa9fdc67bf52de4632242146b8.mp4',
     pixelated: true,
     synopsis:
       "Confined by Long COVID to her brother's childhood bedroom, Lizzie wrestles with illness and disability through a silent dialogue with the boyhood souvenirs that surround her. These objects quietly push her towards a breakthrough that changes how she sees her illness, and herself.",
