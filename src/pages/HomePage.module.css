@@ -140,7 +140,7 @@
 }
 
 .logoLink {
-  display: inline-flex;
+  display: none;
   align-items: center;
   flex-shrink: 0;
 }
@@ -681,7 +681,7 @@
     padding: var(--sp-10) var(--sp-4) var(--sp-6);
     gap: var(--sp-3);
   }
-  .logoLink { margin-bottom: var(--sp-4); }
+  .logoLink { display: inline-flex; margin-bottom: var(--sp-4); }
   .logoImg { height: 44px; }
   .tagline { font-size: 12px; line-height: 1.4; }
   .nav { gap: var(--sp-3); flex-wrap: wrap; }
