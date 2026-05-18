@@ -12,14 +12,18 @@ const PROJECT_ID = process.env.SANITY_PROJECT_ID || 'h5ku88jy'
 const DATASET = process.env.SANITY_DATASET || 'production'
 const TOKEN = process.env.SANITY_READ_TOKEN // optional, only needed for private datasets
 
+// Sanity image pipeline params: max 1600px wide, auto WebP/AVIF, quality 80.
+// Big enough for retina drawer display and OG cards; ~5-10x smaller than originals.
+const IMG = "?w=1600&q=80&auto=format"
+
 const QUERY = `*[_type == "film"] | order(order asc, _createdAt asc){
   "slug": slug.current,
   title,
   year,
   format,
   synopsis,
-  "poster": poster.asset->url,
-  "pageImage": pageImage.asset->url,
+  "poster": poster.asset->url + "${IMG}",
+  "pageImage": pageImage.asset->url + "${IMG}",
   "pageVideo": pageVideo.asset->url,
   pageVideoStart,
   "trailer": trailer.asset->url,
