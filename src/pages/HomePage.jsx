@@ -187,7 +187,7 @@ export default function HomePage() {
                         </span>
 
                         <span className={styles.channelTitle}>{f.title}</span>
-                        <span className={styles.channelSlug}>{f.format} · {f.year}</span>
+                        <span className={styles.channelSlug}>{f.format}</span>
                       </button>
                     )
                   })}
