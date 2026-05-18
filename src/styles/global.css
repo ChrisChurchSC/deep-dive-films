@@ -86,3 +86,13 @@
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .section { padding: var(--sp-16) 0; }
 }
+
+/* Hover accent — subtle cyan outline on any interactive element */
+@media (pointer: fine) {
+  a:hover,
+  button:not(:disabled):hover,
+  [data-cursor="frame"]:hover {
+    outline: 1px solid var(--accent);
+    outline-offset: 3px;
+  }
+}

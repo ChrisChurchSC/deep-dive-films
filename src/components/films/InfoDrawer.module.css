@@ -1,0 +1,156 @@
+.section {
+  padding: 0 0 var(--sp-10);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--sp-10);
+}
+
+.section:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 var(--sp-5);
+  font-weight: 500;
+}
+
+.body {
+  font-family: var(--font-display);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0 0 var(--sp-5);
+}
+
+.body:last-child { margin-bottom: 0; }
+
+/* Team */
+.team {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-10);
+}
+
+.teamRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.teamPhoto {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--surface2);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.teamPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.teamPhotoPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--surface2), var(--surface3));
+}
+
+.teamMeta {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--sp-2) var(--sp-4);
+  align-items: baseline;
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--border);
+}
+
+.teamName {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  color: var(--text);
+  margin: 0;
+}
+
+.teamRole {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.teamBio {
+  grid-column: 1 / -1;
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Contact lead */
+.lead {
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0 0 var(--sp-8);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: var(--sp-3) var(--sp-5);
+  margin: 0;
+}
+
+.info dt {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 4px;
+  margin: 0;
+}
+
+.info dd {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.info dd a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--t-fast);
+}
+
+.info dd a:hover {
+  text-decoration-color: var(--text);
+}
+
+.sep { color: var(--muted); }

@@ -1,20 +1,21 @@
 export const siteSettings = {
   siteName: 'Deep Dive Films',
   siteDescription:
-    'New York-based film and television studio. Documentary and narrative work for streamers, networks, and festivals.',
+    'Award-winning documentary production company. Character-driven storytelling for streamers, networks, and festivals.',
   contactEmail: 'hello@deepdivefilms.com',
   nav: {
     links: [
-      { label: 'Films', to: '/' },
       { label: 'About', to: '/about' },
+      { label: 'Contact', to: '/contact' },
     ],
   },
   footer: {
     links: [
-      { label: 'Films', to: '/' },
+      { label: 'Work', to: '/' },
       { label: 'About', to: '/about' },
+      { label: 'Contact', to: '/contact' },
     ],
-    tagline: 'Documentary and narrative film.\nNew York.',
+    tagline: 'Documentary film.\nBrooklyn.',
     copyrightCity: 'Brooklyn, NY.',
     socials: {
       instagram: 'https://www.instagram.com/deepdivefilms',

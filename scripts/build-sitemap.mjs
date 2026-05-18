@@ -9,13 +9,14 @@ const SITE_URL  = 'https://deepdivefilms.com'
 const { films } = await import(path.resolve(__dirname, '../src/data/films.js'))
 
 const staticRoutes = [
-  { path: '/',      priority: '1.0', changefreq: 'weekly' },
-  { path: '/about', priority: '0.7', changefreq: 'monthly' },
+  { path: '/',        priority: '1.0', changefreq: 'weekly' },
+  { path: '/about',   priority: '0.7', changefreq: 'monthly' },
+  { path: '/contact', priority: '0.6', changefreq: 'monthly' },
 ]
 
 const filmRoutes = films
   .filter((f) => f.slug)
-  .map((f) => ({ path: `/films/${f.slug}`, priority: '0.8', changefreq: 'monthly' }))
+  .map((f) => ({ path: `/${f.slug}`, priority: '0.8', changefreq: 'monthly' }))
 
 const all = [...staticRoutes, ...filmRoutes]
 

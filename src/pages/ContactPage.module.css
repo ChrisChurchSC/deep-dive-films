@@ -1,0 +1,104 @@
+.viewport {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--sp-5) var(--sp-8);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: var(--sp-6);
+}
+
+.navLink {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+.navLink:hover { color: var(--text); }
+
+.body {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--sp-16) var(--sp-8) var(--sp-24);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--subtle);
+  margin-bottom: var(--sp-8);
+}
+
+.lead {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0 0 var(--sp-12);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: var(--sp-4) var(--sp-6);
+  margin: 0;
+}
+
+.info dt {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+  padding-top: 4px;
+}
+
+.info dd {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.info dd a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--t-fast);
+}
+
+.info dd a:hover {
+  text-decoration-color: var(--text);
+}
+
+.sep { color: var(--muted); }
+
+@media (max-width: 700px) {
+  .body { padding: var(--sp-10) var(--sp-5) var(--sp-16); }
+  .info { grid-template-columns: 1fr; gap: var(--sp-1) var(--sp-4); }
+  .info dd { margin-bottom: var(--sp-4); }
+}

@@ -1,0 +1,72 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dot {
+  font-size: 9px;
+  transition: opacity 0.1s ease;
+}
+
+.sep { color: var(--subtle); }
+
+/* Flip board (train-station style) */
+.flipBoard {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-5);
+  font-family: var(--font-mono);
+  background: rgba(0,0,0,0.5);
+  border: 1px solid var(--border);
+  padding: 6px var(--sp-4);
+  white-space: nowrap;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.flipCell {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.flipVal {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.flipLabel {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.flipText {
+  display: inline-block;
+  font-family: inherit;
+  font-feature-settings: 'tnum' 1;
+  white-space: pre;
+}
+
+@media (max-width: 900px) {
+  .flipBoard { gap: var(--sp-3); padding: 4px var(--sp-3); }
+  .flipVal { font-size: 10px; }
+  .flipLabel { font-size: 8px; }
+}
+
+@media (max-width: 800px) {
+  .topbar { font-size: 9px; gap: var(--sp-2); flex-wrap: wrap; }
+  .topbar > span:nth-child(n+8) { display: none; }
+}

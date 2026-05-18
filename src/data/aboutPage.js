@@ -1,19 +1,27 @@
 export const aboutPage = {
-  heroEyebrow: 'About',
-  heroTitle: 'A documentary and narrative film studio.',
-  heroDescription:
-    "Deep Dive Films makes documentary and narrative work for streamers, networks, and festivals. Based in New York.",
-  introLabel: 'Who we are',
-  introBody: [
-    'Deep Dive Films is the entertainment arm of Deep Dive. We make documentary and narrative film — features, shorts, and series — for streamers, networks, and the festival circuit.',
-    "Our films have premiered at Berlin, Palm Springs, and Cleveland, and aired on HBO. We work with story-first subjects, real access, and the kind of craft that gets the audience to the end credits.",
+  intro: [
+    "We are an award-winning documentary production company founded by two longtime collaborators who met while editing in our college media lab. Focused on character-driven storytelling, we create emotionally grounded films that explore complex people, hidden worlds, and the fault lines beneath everyday life. Our work has been supported by Sundance Institute, Firelight Media, ITVS, Film Independent, Vox Media, CBS News, and HBO.",
+    "Our approach to filmmaking is rooted in earned trust and close collaboration. We're a tight-knit team that works closely with filmmakers and participants to shape personal stories from the ground up. Deep Dive Films stays hands-on through every stage of the process, from development through distribution, with a commitment to telling stories that stay with viewers.",
+    "We're always interested in developing new projects and working with filmmakers who feel deeply connected to the stories they're telling. Reach out to talk about a film or collaboration.",
   ],
-  valuesLabel: 'What we believe',
-  values: [
-    { label: 'Story first', desc: 'We start with what the audience needs to feel by the end. Everything else follows from that.' },
-    { label: 'Real access', desc: 'The most useful footage comes from real subjects in their real lives. Time and trust are the unlock.' },
-    { label: 'Finish rates over views', desc: 'A film someone watches to the end is worth more than a thousand three-second scrolls.' },
+  team: [
+    {
+      name: 'Drew Dickler',
+      role: 'Director, Producer & Co-founder',
+      photo: '/team/drew.webp',
+      bio: 'Drew Dickler is a Brooklyn-based documentary filmmaker, producer, and co-founder of Deep Dive Films. Her work includes the HBO feature Fireboys, award-winning shorts, and branded projects for Google, Zagat, and Vox Media. A Sundance Producers Intensive Fellow, her films have earned festival acclaim, a Webby nomination, and a local Emmy.',
+    },
+    {
+      name: 'David Sherwin',
+      role: 'Director, Producer & Co-founder',
+      photo: '/team/david.webp',
+      bio: 'David Sherwin is a Brooklyn native, Emmy-nominated producer, editor, and co-founder at Deep Dive Films. He has over a decade of experience in documentary production, digital media, and commercial work with companies like Google, Brooklyn Brewery, and Vox Media. His work has received praise from The Today Show, The Atlantic, New York Magazine, The New York Times, and many others.',
+    },
+    {
+      name: 'Jennie Kamin',
+      role: 'Director, Producer & Co-founder',
+      photo: '/team/jennie.webp',
+      bio: 'Jennie Kamin is an Emmy-winning producer and co-founder of Deep Dive Films, based in Brooklyn. She spent several years at CBS News producing feature and documentary stories for CBS Mornings, CBS Religion & Culture, and CBSN on Assignment. Her commercial work includes campaigns for Rakuten, Spot & Tango, and the ALS Foundation.',
+    },
   ],
-  pressLabel: 'In the press',
-  press: [],
 }

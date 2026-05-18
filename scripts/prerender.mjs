@@ -9,8 +9,8 @@ const ssrDir    = path.resolve(root, 'dist-ssr')
 
 const { films } = await import(path.resolve(root, 'src/data/films.js'))
 
-const staticRoutes = ['/', '/about']
-const filmRoutes   = films.filter((f) => f.slug).map((f) => `/films/${f.slug}`)
+const staticRoutes = ['/', '/about', '/contact']
+const filmRoutes   = films.filter((f) => f.slug).map((f) => `/${f.slug}`)
 const routes = [...staticRoutes, ...filmRoutes]
 console.log(`  Prerendering ${routes.length} routes`)
 
