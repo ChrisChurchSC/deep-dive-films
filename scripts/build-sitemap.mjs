@@ -6,7 +6,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUT_PATH  = path.resolve(__dirname, '../public/sitemap.xml')
 const SITE_URL  = 'https://deepdivefilms.com'
 
-const { films } = await import(path.resolve(__dirname, '../src/data/films.js'))
+const films = JSON.parse(
+  await fs.readFile(path.resolve(__dirname, '../src/data/films.generated.json'), 'utf8'),
+)
 
 const staticRoutes = [
   { path: '/',        priority: '1.0', changefreq: 'weekly' },

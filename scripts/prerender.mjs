@@ -7,7 +7,9 @@ const root      = path.resolve(__dirname, '..')
 const distDir   = path.resolve(root, 'dist')
 const ssrDir    = path.resolve(root, 'dist-ssr')
 
-const { films } = await import(path.resolve(root, 'src/data/films.js'))
+const films = JSON.parse(
+  fs.readFileSync(path.resolve(root, 'src/data/films.generated.json'), 'utf-8'),
+)
 
 const staticRoutes = ['/', '/about', '/contact']
 const filmRoutes   = films.filter((f) => f.slug).map((f) => `/${f.slug}`)
