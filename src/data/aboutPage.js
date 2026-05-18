@@ -1,8 +1,8 @@
 export const aboutPage = {
   intro: [
-    "Deep Dive Films is a Brooklyn documentary studio, founded by two longtime collaborators who met editing in a college media lab. We make character-driven films about complex people, hidden worlds, and the fault lines beneath everyday life. Our work has been supported by Sundance Institute, Firelight Media, ITVS, Film Independent, Vox Media, CBS News, and HBO.",
-    "We build films on earned trust. We work closely with filmmakers and participants to shape personal stories from the ground up, staying involved from first conversation through distribution, with one goal: stories that stay with viewers.",
-    "If you're developing a film you feel deeply connected to, we'd like to hear about it.",
+    "We are an award-winning documentary production company founded by two longtime collaborators who met while editing in our college media lab. Focused on character-driven storytelling, we create emotionally grounded films that explore complex people, hidden worlds, and the fault lines beneath everyday life. Our work has been supported by Sundance Institute, Firelight Media, ITVS, Film Independent, Vox Media, CBS News, and HBO.",
+    "Our approach to filmmaking is rooted in earned trust and close collaboration. We're a tight-knit team that works closely with filmmakers and participants to shape personal stories from the ground up. Deep Dive Films stays hands-on through every stage of the process, from development through distribution, with a commitment to telling stories that stay with viewers.",
+    "We're always interested in developing new projects and working with filmmakers who feel deeply connected to the stories they're telling. Reach out to talk about a film or collaboration.",
   ],
   team: [
     {
