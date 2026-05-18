@@ -157,7 +157,7 @@ export default function HomePage() {
 
                     <span className={styles.channelHead}>
                       <span className={styles.channelNum}>00</span>
-                      <span className={`${styles.channelDot} ${styles.channelDotLive}`} aria-hidden="true">■</span>
+                      <span className={`${styles.channelStatus} ${styles.channelStatusLive}`}>Live</span>
                     </span>
 
                     <span className={styles.channelTitle}>Home</span>
@@ -181,8 +181,8 @@ export default function HomePage() {
 
                         <span className={styles.channelHead}>
                           <span className={styles.channelNum}>{pad2(i + 1)}</span>
-                          <span className={`${styles.channelDot} ${released ? styles.channelDotLive : styles.channelDotIdle}`} aria-hidden="true">
-                            {released ? '■' : '◌'}
+                          <span className={`${styles.channelStatus} ${released ? styles.channelStatusLive : styles.channelStatusIdle}`}>
+                            {statusFor(f)}
                           </span>
                         </span>
 

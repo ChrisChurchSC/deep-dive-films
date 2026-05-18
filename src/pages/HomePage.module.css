@@ -559,6 +559,18 @@
 .channelDotLive { color: var(--accent); }
 .channelDotIdle { color: var(--muted); }
 
+.channelStatus {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+.channelStatusLive { color: var(--accent); }
+.channelStatusIdle { color: var(--muted); opacity: 0.7; }
+
 .channelTitle {
   font-family: var(--font-display);
   font-size: 15px;
