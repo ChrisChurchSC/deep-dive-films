@@ -632,3 +632,32 @@
   .heroTitle { font-size: clamp(20px, 5vw, 32px); }
   .bottombar { padding: var(--sp-3) var(--sp-5); flex-direction: column; align-items: flex-start; gap: var(--sp-3); }
 }
+
+@media (max-width: 600px) {
+  .topbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--sp-4);
+    gap: var(--sp-3);
+  }
+  .tagline { font-size: 12px; line-height: 1.4; }
+  .nav { gap: var(--sp-3); flex-wrap: wrap; }
+  .locale { display: none; }
+
+  .stage { padding: var(--sp-4); gap: var(--sp-3); }
+  .heroLabel { padding: var(--sp-6) var(--sp-4) var(--sp-4); }
+  .heroMeta { padding: var(--sp-3) var(--sp-4); font-size: 9px; }
+
+  .moduleBody { padding: var(--sp-2); gap: var(--sp-2); }
+  .channel {
+    grid-template-columns: auto 1fr;
+    padding: 10px var(--sp-3);
+    min-height: 44px;
+  }
+  .channelSlug { display: none; }
+  .channelTitle { font-size: 14px; }
+
+  .bottombar { padding: var(--sp-3) var(--sp-4); gap: var(--sp-2); }
+  .bottomRight { flex-wrap: wrap; }
+}

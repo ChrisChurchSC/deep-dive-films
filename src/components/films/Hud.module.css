@@ -70,3 +70,15 @@
   .topbar { font-size: 9px; gap: var(--sp-2); flex-wrap: wrap; }
   .topbar > span:nth-child(n+8) { display: none; }
 }
+
+@media (max-width: 600px) {
+  .flipBoard {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    gap: var(--sp-2) var(--sp-3);
+    padding: 6px var(--sp-3);
+    width: 100%;
+    overflow: visible;
+  }
+}
