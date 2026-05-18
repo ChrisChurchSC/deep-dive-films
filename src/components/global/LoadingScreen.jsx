@@ -1,27 +1,23 @@
 import { useEffect, useState } from 'react'
+import NoiseStatic from '../films/NoiseStatic'
 import styles from './LoadingScreen.module.css'
 
 export default function LoadingScreen() {
   const [visible, setVisible] = useState(true)
-  const [exiting, setExiting] = useState(false)
 
   useEffect(() => {
-    const t1 = setTimeout(() => setExiting(true), 1400)
-    const t2 = setTimeout(() => setVisible(false), 1950)
-    return () => { clearTimeout(t1); clearTimeout(t2) }
+    const t = setTimeout(() => setVisible(false), 1500)
+    return () => clearTimeout(t)
   }, [])
 
   if (!visible) return null
 
   return (
-    <div className={`${styles.root} ${exiting ? styles.exiting : ''}`}>
-      <div className={styles.inner}>
-        <span className={styles.label}>DEEP DIVE</span>
-        <div className={styles.track}>
-          <div className={styles.fill} />
-          <div className={styles.head} />
-        </div>
+    <div className={styles.root} aria-hidden="true">
+      <div className={styles.noise}>
+        <NoiseStatic resolution={1200} intensity={0.9} />
       </div>
+      <div className={styles.line} />
     </div>
   )
 }
