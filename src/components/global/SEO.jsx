@@ -23,9 +23,7 @@ const organizationSchema = {
     addressCountry: 'US',
   },
   sameAs: [
-    siteSettings.footer?.socials?.linkedin,
     siteSettings.footer?.socials?.instagram,
-    siteSettings.footer?.socials?.vimeo,
   ].filter(Boolean),
 }
 

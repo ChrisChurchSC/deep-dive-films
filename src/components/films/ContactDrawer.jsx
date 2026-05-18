@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Drawer from './Drawer'
+import SEO from '../global/SEO'
 import { siteSettings } from '../../data/siteSettings'
 import styles from './InfoDrawer.module.css'
 import formStyles from './ContactForm.module.css'
@@ -40,6 +41,13 @@ export default function ContactDrawer() {
   }
 
   return (
+    <>
+    <SEO
+      title="Contact"
+      description="Get in touch with Deep Dive Films about new projects and collaborations."
+      canonical="/contact"
+      breadcrumbs={[{ name: 'Contact', url: '/contact' }]}
+    />
     <Drawer title="Contact">
       <p className={styles.lead}>
         We're always interested in developing new projects and working with filmmakers who feel deeply connected to the stories they're telling.
@@ -134,5 +142,6 @@ export default function ContactDrawer() {
         )}
       </dl>
     </Drawer>
+    </>
   )
 }

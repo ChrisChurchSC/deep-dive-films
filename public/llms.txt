@@ -1,23 +1,28 @@
 # Deep Dive Films
 
-> New York-based film and television studio. Documentary and narrative work for streamers, networks, and festivals.
+> Brooklyn-based documentary and narrative film studio. Character-driven work for streamers, networks, and the festival circuit.
 
-Deep Dive Films is the entertainment arm of Deep Dive. We make documentary and narrative film — features, shorts, and series — for streamers, networks, and the festival circuit.
+Deep Dive Films is the entertainment arm of Deep Dive. Founded by Drew Dickler, David Sherwin, and Jennie Kamin, the studio produces feature documentaries, shorts, and series with support from Sundance Institute, Firelight Media, ITVS, Film Independent, Vox Media, CBS News, and HBO.
 
-## Selected films
+## Films
 
-- What Will I Become? (2026 feature documentary, Berlinale premiere, exec produced by Harper Steele)
-- Big Bass (2025 short documentary, Palm Springs ShortFest Jury Prize)
-- Fireboys (2022 feature documentary, HBO)
+- /wwib — What Will I Become? (2026 feature documentary). Berlinale World Premiere. Directed by Lexie Bean and Logan Rozos. Executive produced by Harper Steele, Lois Vossen, Carrie Lozano. Trans coming-of-age story.
+- /bigbass — Big Bass (2025 short documentary). Palm Springs ShortFest Desert View Jury Award winner. Directed by Drew Dickler. Queer memory and identity.
+- /fireboys — Fireboys (2021 feature documentary). HBO. Directed by Drew Dickler and Jakob Hochendoner. Incarcerated young men fighting California wildfires.
+- /grassceiling — The Grass Ceiling (in post-production). Feature documentary directed by Sarah Strauss. Women and baseball.
+- /hashhunt — Hash Hunt (in production). Documentary series directed by David Sherwin. True-crime story of Vermont kingpin Billy Greer.
+- /betheexplorer — Be the Explorer (coming soon). Short film directed by Lizzie Parmenter. Long COVID, illness, and disability.
+
+## Pages
+
+- / — Film catalogue (six films)
+- /:slug — Individual film page (e.g. /wwib, /fireboys)
+- /about — Studio story and team bios
+- /contact — Inquiries and collaboration
 
 ## Contact
 
 - Website: https://deepdivefilms.com
 - Email: hello@deepdivefilms.com
 - Location: Brooklyn, NY
-
-## Pages
-
-- / — Film catalogue
-- /films/:slug — Individual film pages
-- /about — Studio story
+- Instagram: https://www.instagram.com/deepdivefilms

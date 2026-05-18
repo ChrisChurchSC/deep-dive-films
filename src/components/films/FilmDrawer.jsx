@@ -1,5 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
 import Drawer from './Drawer'
+import SEO from '../global/SEO'
 import { filmsBySlug } from '../../data/films'
 import styles from './InfoDrawer.module.css'
 
@@ -14,8 +15,32 @@ export default function FilmDrawer() {
     credits.producers?.length ||
     credits.executiveProducers?.length
 
+  const description = (film.synopsis || '').slice(0, 200)
+  const movieJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Movie',
+    name: film.title,
+    description: film.synopsis,
+    genre: film.format,
+    image: film.pageImage || undefined,
+    director: credits.directors?.map((n) => ({ '@type': 'Person', name: n })),
+    producer: credits.producers?.map((n) => ({ '@type': 'Person', name: n })),
+    productionCompany: { '@type': 'Organization', name: 'Deep Dive Films' },
+    url: `https://deepdivefilms.com/${film.slug}`,
+  }
+
   return (
-    <Drawer title={film.title}>
+    <>
+      <SEO
+        title={film.title}
+        description={description}
+        canonical={`/${film.slug}`}
+        ogImage={film.pageImage || undefined}
+        ogType="video.movie"
+        jsonLd={movieJsonLd}
+        breadcrumbs={[{ name: film.title, url: `/${film.slug}` }]}
+      />
+      <Drawer title={film.title}>
       {film.trailer ? (
         <section className={styles.section}>
           <p className={styles.label}>Trailer</p>
@@ -122,5 +147,6 @@ export default function FilmDrawer() {
         </section>
       )}
     </Drawer>
+    </>
   )
 }
